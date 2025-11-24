@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Current Day",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/day_${config:aoc.currentDay}",
+            "args": ["input"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/src/day_${config:aoc.currentDay}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "Debug Build Current Day",
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}

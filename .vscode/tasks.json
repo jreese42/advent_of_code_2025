@@ -1,0 +1,92 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Current Day",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "build",
+                "DAY=${config:aoc.currentDay}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            }
+        },
+        {
+            "label": "Build All Days",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "all-days"
+            ],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            }
+        },
+        {
+            "label": "Clean Build",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "clean"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Debug Build Current Day",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "debug",
+                "DAY=${config:aoc.currentDay}"
+            ],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            }
+        },
+        {
+            "label": "Debug Build Specific Day",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "debug",
+                "DAY=${input:dayNumber}"
+            ],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "dayNumber",
+            "type": "promptString",
+            "description": "Enter the day number (1-12)",
+            "default": "1"
+        }
+    ]
+}
