@@ -1,6 +1,6 @@
 {
     "C_Cpp.default.compilerPath": "/usr/bin/clang++",
-    "aoc.currentDay": "6",
+    "aoc.currentDay": "7",
     "files.associations": {
         "string": "cpp",
         "__locale": "cpp",
