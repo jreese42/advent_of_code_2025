@@ -1,6 +1,6 @@
 {
     "C_Cpp.default.compilerPath": "/usr/bin/clang++",
-    "aoc.currentDay": "5",
+    "aoc.currentDay": "6",
     "files.associations": {
         "string": "cpp",
         "__locale": "cpp",
@@ -38,6 +38,13 @@
         "variant": "cpp",
         "algorithm": "cpp",
         "array": "cpp",
-        "complex": "cpp"
+        "complex": "cpp",
+        "__hash_table": "cpp",
+        "__split_buffer": "cpp",
+        "deque": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp"
     }
 }
